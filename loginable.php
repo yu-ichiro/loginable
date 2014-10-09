@@ -3,7 +3,7 @@
 Plugin Name: Loginable
 Description: Determines if the user is Loginable using cookie with php
 Version: 0.1
-Author: Luke0804
+Author: yu-ichiro
 License: GPL2
 */
 ?>
