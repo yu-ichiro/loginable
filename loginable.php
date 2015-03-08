@@ -2,7 +2,7 @@
 /*
 Plugin Name: Loginable
 Description: Determines if the user is Loginable using cookie with php
-Version: 0.1
+Version: 0.2
 Author: yu-ichiro
 License: GPL2
 
@@ -62,7 +62,7 @@ add_action('admin_init', 'loginable_auth_cookie');
 
 
 function loginable_auth_cookie() {
-	setcookie(esc_attr( get_option('loginable_cookie'))? esc_attr( get_option('loginable_cookie')) : 'user' , 1, time()+60*60*24*30,"/");
+	setcookie(esc_attr( get_option('loginable_cookie'))? esc_attr( get_option('loginable_cookie')) : 'user' , 1, time()+60*60*24*365,"/");
 }
 
 function loginable() {
